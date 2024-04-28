@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>
+        JOLIE CAO: 9 GRAPHIC ICONS
+    </title>
+
+    <style>
+        .row{
+            width: 720px;
+            /* margin: top right bottom left */
+            margin: 0px auto 0px auto;
+            }
+        .image-container{
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px; 
+            }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js">
+    </script>
+</head>
+
+<body style="background-color:cornsilk;">
+    <!-- <h1>
+        Here are my 9 graphic icons
+    </h1>
+    <h2>
+        This is my first website
+    </h2>
+    <p>
+        What should I write here?
+        Is text allowed in this website?
+    </p> -->
+    <div class="row">
+    <div class="image-container"><img id="image1" src="IMG/image1.png" width="200" onmouseover="this.src = 'IMG/1.png';" onmouseout="this.src = 'IMG/image1.png';"></div>
+    <div class="image-container"><img id="image2" src="IMG/image2.png" width="200" onmouseover="this.src = 'IMG/2.png';" onmouseout="this.src = 'IMG/image2.png';" ></div>
+    <div class="image-container"><img id="image3" src="IMG/image3.png" width="200" onmouseover="this.src = 'IMG/3.png';" onmouseout="this.src = 'IMG/image3.png';"></div>
+    </div>
+    
+    <div class="row">
+        <div class="image-container"><img id="image4" src="IMG/image4.png" width="200" onmouseover="this.src = 'IMG/4.png';" onmouseout="this.src = 'IMG/image4.png';" ></div>
+        <div class="image-container"><img id="image5" src="IMG/image5.png" width="200" onmouseover="this.src = 'IMG/5.png';" onmouseout="this.src = 'IMG/image5.png';"  ></div>
+        <div class="image-container"><img id="image6" src="IMG/image6.png" width="200" onmouseover="this.src = 'IMG/6.png';" onmouseout="this.src = 'IMG/image6.png';" ></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"> <img id="image7" src="IMG/image7.png" width="200" onmouseover="this.src = 'IMG/7.png';" onmouseout="this.src = 'IMG/image7.png';" ></div>
+        <div class="image-container"><img id="image8" src="IMG/image8.png" width="200" onmouseover="this.src = 'IMG/8.png';" onmouseout="this.src = 'IMG/image8.png';" ></div>
+        <div class="image-container"><img id="image9" src="IMG/image9.png" width="200" onmouseover="this.src = 'IMG/9.png';" onmouseout="this.src = 'IMG/image9.png';" ></div>
+    </div>
+
+    <script>
+        var sound1 = new buzz.sound("SOUND/sound1.mp3");
+        var sound2 = new buzz.sound("SOUND/sound2.mp3");
+        var sound3 = new buzz.sound("SOUND/sound3.mp3");
+        var sound4 = new buzz.sound("SOUND/sound4.mp3");
+        var sound5 = new buzz.sound("SOUND/sound5.mp3");
+        var sound6 = new buzz.sound("SOUND/sound6.mp3");
+        var sound7 = new buzz.sound("SOUND/sound7.mp3");
+        var sound8 = new buzz.sound("SOUND/sound8.mp3");
+        var sound9 = new buzz.sound("SOUND/sound9.mp3");
+
+        window.onload = function() {
+            document.getElementById('image1').addEventListener('mouseover', function () {sound1.play();});
+            document.getElementById('image2').addEventListener('mouseover', function () {sound2.play();});
+            document.getElementById('image3').addEventListener('mouseover', function () {sound3.play();});
+            document.getElementById('image4').addEventListener('mouseover', function () {sound4.play();});
+            document.getElementById('image5').addEventListener('mouseover', function () {sound5.play();});
+            document.getElementById('image6').addEventListener('mouseover', function () {sound6.play();});
+            document.getElementById('image7').addEventListener('mouseover', function () {sound7.play();});
+            document.getElementById('image8').addEventListener('mouseover', function () {sound8.play();});
+            document.getElementById('image9').addEventListener('mouseover', function () {sound9.play();});
+
+                }
+    </script>
+
+
+</body>
+</html>
